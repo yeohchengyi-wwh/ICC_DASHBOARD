@@ -1,0 +1,4471 @@
+{
+  "meta": {
+    "isDemo": true,
+    "label": "Demonstration data",
+    "sourceFile": "ICC_PowerBI_Dataset.xlsx",
+    "referenceDate": "2026-10-13",
+    "currency": "MYR",
+    "revenueUnit": "RM",
+    "reportingYears": [
+      2024,
+      2025,
+      2026
+    ],
+    "version": 1,
+    "description": "All portfolio records, organisations, teams, dates and financial amounts are fictional. The supplied workbook informed the agreement, IP, revenue and compliance field structure only.",
+    "expiryMeaning": "Demo portfolio renewal and agreement review dates. IP dates are illustrative administration dates, not statutory protection expiry dates.",
+    "revenueMeaning": "Collected commercialization revenue in RM through 13 October 2026. Linked monthly statement amounts reconcile to each agreement total.",
+    "pipelineDateMeaning": "For Discovery and Negotiation records, agreementDate is the engagement start date; no signed agreement is implied.",
+    "sourceSchema": [
+      {
+        "sheet": "Dashboard",
+        "dataRows": 12,
+        "columns": [
+          "ICC Power BI Dataset Summary - Updated with File5 Financial Evidence"
+        ]
+      },
+      {
+        "sheet": "Source_Files",
+        "dataRows": 5,
+        "columns": [
+          "SourceFileID",
+          "SourceFileName",
+          "AgreementID",
+          "Licensee",
+          "FileRole",
+          "PagesOrItemsCaptured",
+          "ProcessedStatus",
+          "PrimaryForAgreement",
+          "KeyNewInformation",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "License_Agreements",
+        "dataRows": 2,
+        "columns": [
+          "AgreementID",
+          "AgreementTitle",
+          "Licensor",
+          "Licensee",
+          "BusinessRegistrationNo",
+          "EffectiveDate",
+          "DurationYears",
+          "ExpiryDate",
+          "Territory",
+          "LicenseType",
+          "LicenseFor",
+          "SublicenseAllowed",
+          "LicenseFeeRM",
+          "RoyaltyFee",
+          "BusinessSandboxStatus",
+          "AgreementStatus",
+          "SourceFiles",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Parties",
+        "dataRows": 4,
+        "columns": [
+          "PartyID",
+          "AgreementID",
+          "PartyRole",
+          "PartyName",
+          "RegistrationOrID",
+          "EntityType",
+          "Address",
+          "ContactPerson",
+          "Phone",
+          "Email",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "IP_Products",
+        "dataRows": 2,
+        "columns": [
+          "IPProductID",
+          "AgreementID",
+          "Licensee",
+          "ProductLicensed",
+          "IPType",
+          "FilingNo",
+          "Schedule",
+          "Territory",
+          "LicenseType",
+          "CommercialisationPillar",
+          "SourceFiles",
+          "VerificationStatus",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Inventors",
+        "dataRows": 5,
+        "columns": [
+          "InventorID",
+          "AgreementID",
+          "IPProductID",
+          "InventorName",
+          "Identifier",
+          "Affiliation",
+          "Address",
+          "InventorCategory",
+          "SourceSchedule",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Students",
+        "dataRows": 3,
+        "columns": [
+          "StudentID",
+          "AgreementID",
+          "StudentName",
+          "MatricNo",
+          "School",
+          "Address",
+          "ContactNumber",
+          "Email",
+          "RoleInAgreement",
+          "SourceSchedule",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Invoices_Payments",
+        "dataRows": 3,
+        "columns": [
+          "TransactionID",
+          "AgreementID",
+          "Licensee",
+          "DocumentType",
+          "DocumentNo",
+          "DebtorNo",
+          "DocumentDate",
+          "AmountRM",
+          "Purpose",
+          "PaymentStatus",
+          "SourceFile",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Stamp_Certificates",
+        "dataRows": 2,
+        "columns": [
+          "StampID",
+          "AgreementID",
+          "Licensee",
+          "AdjudicationNo",
+          "CertificateNo",
+          "InstrumentDate",
+          "StampingDate",
+          "StampDutyRM",
+          "PenaltyRM",
+          "AdjustmentRM",
+          "TotalPaidRM",
+          "ConsiderationRM",
+          "Endorsement",
+          "PrintedDate",
+          "SourceFiles",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Supporting_Documents",
+        "dataRows": 22,
+        "columns": [
+          "DocumentID",
+          "AgreementID",
+          "SourceFileID",
+          "DocumentType",
+          "DocumentDate",
+          "DocumentReference",
+          "RelatedParty",
+          "Summary",
+          "DatasetUse",
+          "Status"
+        ]
+      },
+      {
+        "sheet": "Contacts_Notices",
+        "dataRows": 6,
+        "columns": [
+          "ContactID",
+          "AgreementID",
+          "PartyRole",
+          "Organisation",
+          "AttentionTo",
+          "OfficerInChargeOrContact",
+          "Address",
+          "Telephone",
+          "Fax",
+          "Email",
+          "SourceFile",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Signatures",
+        "dataRows": 10,
+        "columns": [
+          "SignatureID",
+          "AgreementID",
+          "SourceFileID",
+          "SignatorySide",
+          "SignatoryName",
+          "Position",
+          "Organisation",
+          "SignatureRole",
+          "WitnessFor",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Clauses_Obligations",
+        "dataRows": 48,
+        "columns": [
+          "ClauseRecordID",
+          "AgreementID",
+          "ClauseNo",
+          "ClauseTitle",
+          "ClauseCategory",
+          "ObligationOwner",
+          "ObligationSummary",
+          "TriggerOrFrequency",
+          "DashboardUse",
+          "RiskLevel",
+          "SourceFiles"
+        ]
+      },
+      {
+        "sheet": "Compliance_Tasks",
+        "dataRows": 13,
+        "columns": [
+          "TaskID",
+          "AgreementID",
+          "Licensee",
+          "TaskCategory",
+          "TaskDescription",
+          "Owner",
+          "DueDate",
+          "Frequency",
+          "Status",
+          "PowerBIFlag",
+          "SourceClause",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Evidence_Log",
+        "dataRows": 20,
+        "columns": [
+          "EvidenceID",
+          "SourceFileID",
+          "AgreementID",
+          "PageOrDocument",
+          "EvidenceType",
+          "ExtractedInformation",
+          "DatasetImpact",
+          "Confidence",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Data_Quality_Issues",
+        "dataRows": 4,
+        "columns": [
+          "IssueID",
+          "AgreementID",
+          "SourceFileID",
+          "IssueCategory",
+          "IssueDescription",
+          "ImpactOnPowerBI",
+          "ActionRequired",
+          "Priority",
+          "Status",
+          "ResolvedBy",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Relationship_Model",
+        "dataRows": 12,
+        "columns": [
+          "Relationship",
+          "FromTable",
+          "FromColumn",
+          "ToTable",
+          "ToColumn",
+          "Cardinality",
+          "PowerBIUse"
+        ]
+      },
+      {
+        "sheet": "Data_Dictionary",
+        "dataRows": 202,
+        "columns": [
+          "SheetName",
+          "ColumnName",
+          "Description",
+          "DataType",
+          "Example"
+        ]
+      },
+      {
+        "sheet": "Categories",
+        "dataRows": 14,
+        "columns": [
+          "CategoryType",
+          "CategoryValue"
+        ]
+      },
+      {
+        "sheet": "Revenue_Statements",
+        "dataRows": 3,
+        "columns": [
+          "RevenueRecordID",
+          "AgreementID",
+          "Licensee",
+          "ProductLicensed",
+          "ReportingPeriod",
+          "IPNo",
+          "ProductService",
+          "AmountRM",
+          "CertifiedBy",
+          "CertifierRole",
+          "SourceFileID",
+          "EvidenceDocument",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Bank_Statement_Summary",
+        "dataRows": 1,
+        "columns": [
+          "StatementID",
+          "AgreementID",
+          "Licensee",
+          "Bank",
+          "AccountNo",
+          "StatementPeriodStart",
+          "StatementPeriodEnd",
+          "AccountStatus",
+          "VisibleOpeningBalanceRM",
+          "VisibleTotalDebitRM",
+          "VisibleTotalCreditRM",
+          "VisibleClosingBalanceRM",
+          "SourceFileID",
+          "Notes"
+        ]
+      },
+      {
+        "sheet": "Approvals_Governance",
+        "dataRows": 3,
+        "columns": [
+          "ApprovalID",
+          "AgreementID",
+          "Licensee",
+          "DocumentType",
+          "ReferenceOrMeeting",
+          "DocumentDate",
+          "DecisionOrFinding",
+          "EvaluationSummary",
+          "SourceFileID",
+          "Notes"
+        ]
+      }
+    ]
+  },
+  "faculties": [
+    "Technology Management & Logistics",
+    "Computing",
+    "Quantitative Sciences",
+    "Business Management",
+    "Applied Psychology, Social Work & Policy",
+    "Multimedia Technology & Communication"
+  ],
+  "ip": [
+    {
+      "id": "IP-001",
+      "title": "Palm-fibre water filter",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2024-01-04",
+      "expiryDate": "2026-10-26",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0001",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-002",
+      "title": "Campus energy forecast",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2024-02-05",
+      "expiryDate": "2029-02-05",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0002",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-003",
+      "title": "Tropical soil biosensor",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2024-03-06",
+      "expiryDate": "2030-03-06",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0003",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-004",
+      "title": "Microbusiness finance toolkit",
+      "type": "Copyright",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2024-04-07",
+      "expiryDate": "2031-04-07",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0004",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-005",
+      "title": "Rehabilitation hand trainer",
+      "type": "Utility Innovation",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2024-05-08",
+      "expiryDate": "2032-05-08",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0005",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-006",
+      "title": "Batik pattern archive",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2024-06-09",
+      "expiryDate": "2026-11-12",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0006",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-007",
+      "title": "Flood-level early warning sensor",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2024-07-10",
+      "expiryDate": "2029-07-10",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0007",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-008",
+      "title": "Malay speech accessibility engine",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2024-08-11",
+      "expiryDate": "2030-08-11",
+      "status": "Pending",
+      "filingNo": "DEMO-MY-2024-0008",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-009",
+      "title": "Rice-husk food packaging",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2024-09-12",
+      "expiryDate": "2026-12-03",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0009",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-010",
+      "title": "Tourism demand analytics",
+      "type": "Trademark",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2024-10-13",
+      "expiryDate": "2032-10-13",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0010",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-011",
+      "title": "Portable wound assessment device",
+      "type": "Patent",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2024-11-14",
+      "expiryDate": "2028-11-14",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0011",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-012",
+      "title": "Heritage wayfinding system",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2024-12-15",
+      "expiryDate": "2027-01-07",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2024-0012",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-013",
+      "title": "Solar cold-chain controller",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2025-01-16",
+      "expiryDate": "2030-01-16",
+      "status": "Pending",
+      "filingNo": "DEMO-MY-2025-0013",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-014",
+      "title": "Secure digital attendance platform",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2025-02-17",
+      "expiryDate": "2031-02-17",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0014",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-015",
+      "title": "Aquaculture water monitoring kit",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2025-03-18",
+      "expiryDate": "2032-03-18",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0015",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-016",
+      "title": "Halal supply-chain verifier",
+      "type": "Copyright",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2025-04-19",
+      "expiryDate": "2026-09-30",
+      "status": "Expired",
+      "filingNo": "DEMO-MY-2025-0016",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-017",
+      "title": "Remote breathing monitor",
+      "type": "Utility Innovation",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2025-05-20",
+      "expiryDate": "2029-05-20",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0017",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-018",
+      "title": "Reusable exhibition connector",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2025-06-21",
+      "expiryDate": "2030-06-21",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0018",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-019",
+      "title": "Low-carbon pavement binder",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2025-07-22",
+      "expiryDate": "2026-11-28",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0019",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-020",
+      "title": "Sign-language learning companion",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2025-08-04",
+      "expiryDate": "2032-08-04",
+      "status": "Pending",
+      "filingNo": "DEMO-MY-2025-0020",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-021",
+      "title": "Bio-based food coating",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2025-09-05",
+      "expiryDate": "2028-09-05",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0021",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-022",
+      "title": "Community market insights",
+      "type": "Trademark",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2025-10-06",
+      "expiryDate": "2026-12-18",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0022",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-023",
+      "title": "Smart mobility support sleeve",
+      "type": "Patent",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2025-11-07",
+      "expiryDate": "2030-11-07",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0023",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-024",
+      "title": "Interactive textile learning kit",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2025-12-08",
+      "expiryDate": "2031-12-08",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2025-0024",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-025",
+      "title": "Rainwater quality controller",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2026-01-09",
+      "expiryDate": "2032-01-09",
+      "status": "Pending",
+      "filingNo": "DEMO-MY-2026-0025",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-026",
+      "title": "Privacy-first learning dashboard",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2026-03-03",
+      "expiryDate": "2028-02-10",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2026-0026",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-027",
+      "title": "Mangrove restoration tracker",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2026-03-19",
+      "expiryDate": "2027-01-12",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2026-0027",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-028",
+      "title": "SME inventory decision engine",
+      "type": "Copyright",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2026-04-22",
+      "expiryDate": "2030-04-12",
+      "status": "Pending",
+      "filingNo": "DEMO-MY-2026-0028",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-029",
+      "title": "Compact clinical screening module",
+      "type": "Utility Innovation",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2026-06-04",
+      "expiryDate": "2031-05-13",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2026-0029",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-030",
+      "title": "Accessible museum audio guide",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2026-06-21",
+      "expiryDate": "2032-06-14",
+      "status": "Granted",
+      "filingNo": "DEMO-MY-2026-0030",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-031",
+      "title": "Modular EV charging monitor",
+      "type": "Patent",
+      "faculty": "Technology Management & Logistics",
+      "owner": "Technology Management & Logistics research team",
+      "applicationDate": "2026-07-17",
+      "expiryDate": "2028-07-15",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0031",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for resource-efficient engineering.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-032",
+      "title": "Agri-image pest detector",
+      "type": "Copyright",
+      "faculty": "Computing",
+      "owner": "Computing research team",
+      "applicationDate": "2026-08-19",
+      "expiryDate": "2029-08-16",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0032",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for inclusive digital services.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-033",
+      "title": "Natural fibre acoustic panel",
+      "type": "Patent",
+      "faculty": "Quantitative Sciences",
+      "owner": "Quantitative Sciences research team",
+      "applicationDate": "2026-09-06",
+      "expiryDate": "2030-09-17",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0033",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for sustainable materials.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-034",
+      "title": "Circular procurement scorecard",
+      "type": "Trademark",
+      "faculty": "Business Management",
+      "owner": "Business Management research team",
+      "applicationDate": "2026-10-05",
+      "expiryDate": "2031-10-18",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0034",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for small business productivity.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-035",
+      "title": "Home-care pressure sensor",
+      "type": "Patent",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "owner": "Applied Psychology, Social Work & Policy research team",
+      "applicationDate": "2026-10-08",
+      "expiryDate": "2032-11-19",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0035",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for community health.",
+      "isDemo": true
+    },
+    {
+      "id": "IP-036",
+      "title": "Digital craft collection",
+      "type": "Industrial Design",
+      "faculty": "Multimedia Technology & Communication",
+      "owner": "Multimedia Technology & Communication research team",
+      "applicationDate": "2026-10-11",
+      "expiryDate": "2028-12-20",
+      "status": "Under Review",
+      "filingNo": "DEMO-MY-2026-0036",
+      "territory": "Malaysia",
+      "description": "A fictional university innovation for cultural access.",
+      "isDemo": true
+    }
+  ],
+  "incubators": [
+    {
+      "id": "INC-001",
+      "name": "Rimba Water Lab",
+      "founder": "Rimba Water founding team",
+      "faculty": "Technology Management & Logistics",
+      "sector": "Clean technology",
+      "effectiveDate": "2024-02-08",
+      "expiryDate": "2026-08-31",
+      "stage": "Graduated",
+      "status": "Graduated",
+      "location": "Penang",
+      "ipId": "IP-001",
+      "milestonesCompleted": 9,
+      "description": "Fictional clean technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-002",
+      "name": "Awan Learning Studio",
+      "founder": "Awan Learning founding team",
+      "faculty": "Computing",
+      "sector": "Education technology",
+      "effectiveDate": "2024-03-09",
+      "expiryDate": "2026-10-30",
+      "stage": "Graduated",
+      "status": "Graduated",
+      "location": "Kuala Lumpur",
+      "ipId": "IP-002",
+      "milestonesCompleted": 8,
+      "description": "Fictional education technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-003",
+      "name": "Padi BioWorks",
+      "founder": "Padi BioWorks founding team",
+      "faculty": "Quantitative Sciences",
+      "sector": "Agriculture & food",
+      "effectiveDate": "2024-05-10",
+      "expiryDate": "2029-05-28",
+      "stage": "Graduated",
+      "status": "Graduated",
+      "location": "Johor Bahru",
+      "ipId": "IP-003",
+      "milestonesCompleted": 8,
+      "description": "Fictional agriculture & food venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-004",
+      "name": "Pasar Insight Lab",
+      "founder": "Pasar Insight founding team",
+      "faculty": "Business Management",
+      "sector": "Business services",
+      "effectiveDate": "2024-06-11",
+      "expiryDate": "2026-11-15",
+      "stage": "Acceleration",
+      "status": "Active",
+      "location": "Kuching",
+      "ipId": "IP-004",
+      "milestonesCompleted": 7,
+      "description": "Fictional business services venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-005",
+      "name": "Sihat Mobility Lab",
+      "founder": "Sihat Mobility founding team",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "sector": "Health technology",
+      "effectiveDate": "2024-08-12",
+      "expiryDate": "2028-08-28",
+      "stage": "Acceleration",
+      "status": "Active",
+      "location": "Kota Kinabalu",
+      "ipId": "IP-005",
+      "milestonesCompleted": 7,
+      "description": "Fictional health technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-006",
+      "name": "Corak Creative Studio",
+      "founder": "Corak Creative founding team",
+      "faculty": "Multimedia Technology & Communication",
+      "sector": "Creative industries",
+      "effectiveDate": "2024-09-13",
+      "expiryDate": "2029-09-28",
+      "stage": "Acceleration",
+      "status": "Active",
+      "location": "Ipoh",
+      "ipId": "IP-006",
+      "milestonesCompleted": 6,
+      "description": "Fictional creative industries venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-007",
+      "name": "Suria Cold Chain",
+      "founder": "Suria Cold founding team",
+      "faculty": "Technology Management & Logistics",
+      "sector": "Clean technology",
+      "effectiveDate": "2025-02-14",
+      "expiryDate": "2027-02-28",
+      "stage": "Acceleration",
+      "status": "Active",
+      "location": "Penang",
+      "ipId": "IP-013",
+      "milestonesCompleted": 6,
+      "description": "Fictional clean technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-008",
+      "name": "Bicara Access Lab",
+      "founder": "Bicara Access founding team",
+      "faculty": "Computing",
+      "sector": "Education technology",
+      "effectiveDate": "2025-03-15",
+      "expiryDate": "2026-12-08",
+      "stage": "Acceleration",
+      "status": "Active",
+      "location": "Kuala Lumpur",
+      "ipId": "IP-008",
+      "milestonesCompleted": 5,
+      "description": "Fictional education technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-009",
+      "name": "Bakau Materials Lab",
+      "founder": "Bakau Materials founding team",
+      "faculty": "Quantitative Sciences",
+      "sector": "Agriculture & food",
+      "effectiveDate": "2025-05-16",
+      "expiryDate": "2029-05-28",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Johor Bahru",
+      "ipId": "IP-009",
+      "milestonesCompleted": 5,
+      "description": "Fictional agriculture & food venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-010",
+      "name": "Niaga Loop Studio",
+      "founder": "Niaga Loop founding team",
+      "faculty": "Business Management",
+      "sector": "Business services",
+      "effectiveDate": "2025-06-17",
+      "expiryDate": "2027-06-28",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Kuching",
+      "ipId": "IP-016",
+      "milestonesCompleted": 4,
+      "description": "Fictional business services venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-011",
+      "name": "Nafas Health Lab",
+      "founder": "Nafas Health founding team",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "sector": "Health technology",
+      "effectiveDate": "2025-08-18",
+      "expiryDate": "2028-08-28",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Kota Kinabalu",
+      "ipId": "IP-017",
+      "milestonesCompleted": 4,
+      "description": "Fictional health technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-012",
+      "name": "Jejak Heritage Studio",
+      "founder": "Jejak Heritage founding team",
+      "faculty": "Multimedia Technology & Communication",
+      "sector": "Creative industries",
+      "effectiveDate": "2025-09-19",
+      "expiryDate": "2027-01-10",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Ipoh",
+      "ipId": "IP-012",
+      "milestonesCompleted": 4,
+      "description": "Fictional creative industries venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-013",
+      "name": "Arus Water Lab",
+      "founder": "Arus Water founding team",
+      "faculty": "Technology Management & Logistics",
+      "sector": "Clean technology",
+      "effectiveDate": "2026-02-18",
+      "expiryDate": "2027-02-28",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Penang",
+      "ipId": "IP-025",
+      "milestonesCompleted": 3,
+      "description": "Fictional clean technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-014",
+      "name": "Tunas Learning Lab",
+      "founder": "Tunas Learning founding team",
+      "faculty": "Computing",
+      "sector": "Education technology",
+      "effectiveDate": "2026-03-08",
+      "expiryDate": "2028-03-28",
+      "stage": "Incubation",
+      "status": "Active",
+      "location": "Kuala Lumpur",
+      "ipId": "IP-026",
+      "milestonesCompleted": 3,
+      "description": "Fictional education technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-015",
+      "name": "Bakau Restoration Studio",
+      "founder": "Bakau Restoration founding team",
+      "faculty": "Quantitative Sciences",
+      "sector": "Agriculture & food",
+      "effectiveDate": "2026-05-14",
+      "expiryDate": "2026-12-22",
+      "stage": "Pre-incubation",
+      "status": "Active",
+      "location": "Johor Bahru",
+      "ipId": "IP-027",
+      "milestonesCompleted": 2,
+      "description": "Fictional agriculture & food venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-016",
+      "name": "Kitar Enterprise Studio",
+      "founder": "Kitar Enterprise founding team",
+      "faculty": "Business Management",
+      "sector": "Business services",
+      "effectiveDate": "2026-07-02",
+      "expiryDate": "2027-06-28",
+      "stage": "Pre-incubation",
+      "status": "Active",
+      "location": "Kuching",
+      "ipId": "IP-028",
+      "milestonesCompleted": 1,
+      "description": "Fictional business services venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-017",
+      "name": "CareNest Innovation Lab",
+      "founder": "CareNest Innovation founding team",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "sector": "Health technology",
+      "effectiveDate": "2026-09-04",
+      "expiryDate": "2028-08-28",
+      "stage": "Pre-incubation",
+      "status": "Active",
+      "location": "Kota Kinabalu",
+      "ipId": "IP-029",
+      "milestonesCompleted": 1,
+      "description": "Fictional health technology venture supported through university incubation.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-018",
+      "name": "Kraf Digital Studio",
+      "founder": "Kraf Digital founding team",
+      "faculty": "Multimedia Technology & Communication",
+      "sector": "Creative industries",
+      "effectiveDate": "2026-10-02",
+      "expiryDate": "2029-09-28",
+      "stage": "Pre-incubation",
+      "status": "Active",
+      "location": "Ipoh",
+      "ipId": "IP-030",
+      "milestonesCompleted": 1,
+      "description": "Fictional creative industries venture supported through university incubation.",
+      "isDemo": true
+    }
+  ],
+  "commercialization": [
+    {
+      "id": "COM-001",
+      "title": "Palm-fibre water filter",
+      "partner": "Rimba Applied Solutions Sdn Bhd",
+      "faculty": "Technology Management & Logistics",
+      "agreementDate": "2024-01-10",
+      "expiryDate": "2026-10-22",
+      "stage": "Licensed",
+      "revenue": 248000,
+      "currency": "MYR",
+      "licenseType": "Exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-001",
+      "incubatorId": "INC-001",
+      "licenseFeeRM": 18000,
+      "description": "Fictional licensing partnership for palm-fibre water filter.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-002",
+      "title": "Campus energy forecast",
+      "partner": "Awan Learning Technologies Sdn Bhd",
+      "faculty": "Computing",
+      "agreementDate": "2024-03-11",
+      "expiryDate": "2028-03-28",
+      "stage": "Licensed",
+      "revenue": 172500,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-002",
+      "incubatorId": "INC-002",
+      "licenseFeeRM": 12000,
+      "description": "Fictional licensing partnership for campus energy forecast.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-003",
+      "title": "Tropical soil biosensor",
+      "partner": "Padi Resource Innovation Sdn Bhd",
+      "faculty": "Quantitative Sciences",
+      "agreementDate": "2024-04-12",
+      "expiryDate": "2029-04-28",
+      "stage": "Licensed",
+      "revenue": 215000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-003",
+      "incubatorId": "INC-003",
+      "licenseFeeRM": 25000,
+      "description": "Fictional licensing partnership for tropical soil biosensor.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-004",
+      "title": "Microbusiness finance toolkit",
+      "partner": "Pasar Analytics Sdn Bhd",
+      "faculty": "Business Management",
+      "agreementDate": "2024-06-13",
+      "expiryDate": "2026-07-31",
+      "stage": "Completed",
+      "revenue": 96000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-004",
+      "incubatorId": "INC-004",
+      "licenseFeeRM": 8000,
+      "description": "Fictional licensing partnership for microbusiness finance toolkit.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-005",
+      "title": "Rehabilitation hand trainer",
+      "partner": "Sihat Assistive Systems Sdn Bhd",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "agreementDate": "2024-07-14",
+      "expiryDate": "2026-11-06",
+      "stage": "Licensed",
+      "revenue": 186000,
+      "currency": "MYR",
+      "licenseType": "Exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-005",
+      "incubatorId": "INC-005",
+      "licenseFeeRM": 16000,
+      "description": "Fictional licensing partnership for rehabilitation hand trainer.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-006",
+      "title": "Batik pattern archive",
+      "partner": "Corak Culture Technologies Sdn Bhd",
+      "faculty": "Multimedia Technology & Communication",
+      "agreementDate": "2024-09-15",
+      "expiryDate": "2028-09-28",
+      "stage": "Licensed",
+      "revenue": 83500,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-006",
+      "incubatorId": "INC-006",
+      "licenseFeeRM": 10000,
+      "description": "Fictional licensing partnership for batik pattern archive.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-007",
+      "title": "Solar cold-chain controller",
+      "partner": "Suria Cooling Systems Sdn Bhd",
+      "faculty": "Technology Management & Logistics",
+      "agreementDate": "2025-01-16",
+      "expiryDate": "2026-12-15",
+      "stage": "Licensed",
+      "revenue": 304000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-013",
+      "incubatorId": "INC-007",
+      "licenseFeeRM": 18000,
+      "description": "Fictional licensing partnership for solar cold-chain controller.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-008",
+      "title": "Malay speech accessibility engine",
+      "partner": "Bicara Digital Access Sdn Bhd",
+      "faculty": "Computing",
+      "agreementDate": "2025-03-17",
+      "expiryDate": "2030-03-28",
+      "stage": "Licensed",
+      "revenue": 225000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-008",
+      "incubatorId": "INC-008",
+      "licenseFeeRM": 12000,
+      "description": "Fictional licensing partnership for malay speech accessibility engine.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-009",
+      "title": "Rice-husk food packaging",
+      "partner": "Bakau Packaging Innovation Sdn Bhd",
+      "faculty": "Quantitative Sciences",
+      "agreementDate": "2025-04-18",
+      "expiryDate": "2027-04-28",
+      "stage": "Licensed",
+      "revenue": 165000,
+      "currency": "MYR",
+      "licenseType": "Exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-009",
+      "incubatorId": "INC-009",
+      "licenseFeeRM": 25000,
+      "description": "Fictional licensing partnership for rice-husk food packaging.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-010",
+      "title": "Halal supply-chain verifier",
+      "partner": "Niaga Verification Solutions Sdn Bhd",
+      "faculty": "Business Management",
+      "agreementDate": "2025-06-19",
+      "expiryDate": "2028-06-28",
+      "stage": "Licensed",
+      "revenue": 112000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-016",
+      "incubatorId": "INC-010",
+      "licenseFeeRM": 8000,
+      "description": "Fictional licensing partnership for halal supply-chain verifier.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-011",
+      "title": "Remote breathing monitor",
+      "partner": "Nafas Care Devices Sdn Bhd",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "agreementDate": "2025-07-20",
+      "expiryDate": "2027-01-05",
+      "stage": "Licensed",
+      "revenue": 248000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-017",
+      "incubatorId": "INC-011",
+      "licenseFeeRM": 16000,
+      "description": "Fictional licensing partnership for remote breathing monitor.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-012",
+      "title": "Heritage wayfinding system",
+      "partner": "Jejak Visitor Systems Sdn Bhd",
+      "faculty": "Multimedia Technology & Communication",
+      "agreementDate": "2025-09-21",
+      "expiryDate": "2030-09-28",
+      "stage": "Agreement",
+      "revenue": 96000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-012",
+      "incubatorId": "INC-012",
+      "licenseFeeRM": 10000,
+      "description": "Fictional licensing partnership for heritage wayfinding system.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-013",
+      "title": "Rainwater quality controller",
+      "partner": "Arus Clean Infrastructure Sdn Bhd",
+      "faculty": "Technology Management & Logistics",
+      "agreementDate": "2026-01-10",
+      "expiryDate": "2027-01-28",
+      "stage": "Licensed",
+      "revenue": 176000,
+      "currency": "MYR",
+      "licenseType": "Exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-025",
+      "incubatorId": "INC-013",
+      "licenseFeeRM": 18000,
+      "description": "Fictional licensing partnership for rainwater quality controller.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-014",
+      "title": "Privacy-first learning dashboard",
+      "partner": "Tunas Digital Learning Sdn Bhd",
+      "faculty": "Computing",
+      "agreementDate": "2026-03-11",
+      "expiryDate": "2026-11-24",
+      "stage": "Agreement",
+      "revenue": 138000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-026",
+      "incubatorId": "INC-014",
+      "licenseFeeRM": 12000,
+      "description": "Fictional licensing partnership for privacy-first learning dashboard.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-015",
+      "title": "Mangrove restoration tracker",
+      "partner": "Bakau Ecosystem Solutions Sdn Bhd",
+      "faculty": "Quantitative Sciences",
+      "agreementDate": "2026-04-12",
+      "expiryDate": "2029-04-28",
+      "stage": "Agreement",
+      "revenue": 65000,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-027",
+      "incubatorId": "INC-015",
+      "licenseFeeRM": 25000,
+      "description": "Fictional licensing partnership for mangrove restoration tracker.",
+      "isDemo": true,
+      "dateMeaning": "Agreement effective"
+    },
+    {
+      "id": "COM-016",
+      "title": "SME inventory decision engine",
+      "partner": "Kitar Commerce Systems Sdn Bhd",
+      "faculty": "Business Management",
+      "agreementDate": "2026-06-13",
+      "expiryDate": "2030-06-28",
+      "stage": "Negotiation",
+      "revenue": 0,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-028",
+      "incubatorId": "INC-016",
+      "licenseFeeRM": 8000,
+      "description": "Fictional licensing partnership for sme inventory decision engine.",
+      "isDemo": true,
+      "dateMeaning": "Engagement started"
+    },
+    {
+      "id": "COM-017",
+      "title": "Compact clinical screening module",
+      "partner": "CareNest Medical Innovation Sdn Bhd",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "agreementDate": "2026-07-14",
+      "expiryDate": "2027-07-28",
+      "stage": "Negotiation",
+      "revenue": 0,
+      "currency": "MYR",
+      "licenseType": "Exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-029",
+      "incubatorId": "INC-017",
+      "licenseFeeRM": 16000,
+      "description": "Fictional licensing partnership for compact clinical screening module.",
+      "isDemo": true,
+      "dateMeaning": "Engagement started"
+    },
+    {
+      "id": "COM-018",
+      "title": "Accessible museum audio guide",
+      "partner": "Kraf Heritage Platforms Sdn Bhd",
+      "faculty": "Multimedia Technology & Communication",
+      "agreementDate": "2026-09-15",
+      "expiryDate": "2028-09-28",
+      "stage": "Discovery",
+      "revenue": 0,
+      "currency": "MYR",
+      "licenseType": "Non-exclusive",
+      "territory": "Malaysia",
+      "ipId": "IP-030",
+      "incubatorId": "INC-018",
+      "licenseFeeRM": 10000,
+      "description": "Fictional licensing partnership for accessible museum audio guide.",
+      "isDemo": true,
+      "dateMeaning": "Engagement started"
+    }
+  ],
+  "activity": [
+    {
+      "id": "ACT-001",
+      "date": "2026-10-13",
+      "entityType": "commercialization",
+      "entityId": "COM-014",
+      "type": "commercialization",
+      "title": "Agreement review completed",
+      "description": "Tunas Digital Learning partnership cleared for signature.",
+      "status": "Agreement",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-002",
+      "date": "2026-10-12",
+      "entityType": "ip",
+      "entityId": "IP-034",
+      "type": "ip",
+      "title": "New IP application submitted",
+      "description": "Circular procurement scorecard entered the review queue.",
+      "status": "Under Review",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-003",
+      "date": "2026-10-11",
+      "entityType": "incubator",
+      "entityId": "INC-016",
+      "type": "incubator",
+      "title": "Venture onboarding completed",
+      "description": "Kitar Enterprise Studio joined pre-incubation.",
+      "status": "Pre-incubation",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-004",
+      "date": "2026-10-09",
+      "entityType": "commercialization",
+      "entityId": "COM-001",
+      "type": "commercialization",
+      "title": "Renewal discussion opened",
+      "description": "Rimba Applied Solutions licensing term expires on 22 October.",
+      "status": "Renewal",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-005",
+      "date": "2026-10-08",
+      "entityType": "ip",
+      "entityId": "IP-027",
+      "type": "ip",
+      "title": "Prototype validation recorded",
+      "description": "Mangrove restoration tracker passed its field demonstration.",
+      "status": "Granted",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-006",
+      "date": "2026-10-07",
+      "entityType": "incubator",
+      "entityId": "INC-008",
+      "type": "incubator",
+      "title": "Accelerator milestone approved",
+      "description": "Bicara Access Lab completed its customer pilot.",
+      "status": "Acceleration",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-007",
+      "date": "2026-10-06",
+      "entityType": "commercialization",
+      "entityId": "COM-013",
+      "type": "commercialization",
+      "title": "Revenue statement received",
+      "description": "Arus Clean Infrastructure submitted its monthly statement.",
+      "status": "Revenue",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-008",
+      "date": "2026-10-05",
+      "entityType": "ip",
+      "entityId": "IP-033",
+      "type": "ip",
+      "title": "Faculty review requested",
+      "description": "Natural fibre acoustic panel moved to technical review.",
+      "status": "Under Review",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-009",
+      "date": "2026-10-03",
+      "entityType": "incubator",
+      "entityId": "INC-015",
+      "type": "incubator",
+      "title": "Incubation check-in completed",
+      "description": "Bakau Restoration Studio agreed its next validation milestone.",
+      "status": "Incubation",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    },
+    {
+      "id": "ACT-010",
+      "date": "2026-10-01",
+      "entityType": "commercialization",
+      "entityId": "COM-017",
+      "type": "commercialization",
+      "title": "Negotiation meeting held",
+      "description": "CareNest Medical Innovation reviewed a draft licensing scope.",
+      "status": "Negotiation",
+      "actor": "ICC portfolio team",
+      "isDemo": true
+    }
+  ],
+  "revenueStatements": [
+    {
+      "id": "REV-001-2024-01",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-01",
+      "date": "2024-01-28",
+      "amountRM": 4822,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-02",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-02",
+      "date": "2024-02-28",
+      "amountRM": 5511,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-03",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-03",
+      "date": "2024-03-28",
+      "amountRM": 6200,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-04",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-04",
+      "date": "2024-04-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-05",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-05",
+      "date": "2024-05-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-06",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-06",
+      "date": "2024-06-28",
+      "amountRM": 4822,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-07",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-07",
+      "date": "2024-07-28",
+      "amountRM": 5511,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-08",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-08",
+      "date": "2024-08-28",
+      "amountRM": 6200,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-09",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-10",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 8266,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-11",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 5511,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2024-12",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 6200,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-01",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-02",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-03",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 8266,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-04",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 5511,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-05",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-06",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-07",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 8266,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-08",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 8955,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-09",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 6200,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-10",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-11",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2025-12",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 8266,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-01",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 9644,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-02",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-03",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-04",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 8266,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-05",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 8955,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-06",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 9644,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-07",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 6888,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-08",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 7577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-09",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 8955,
+      "isDemo": true
+    },
+    {
+      "id": "REV-001-2026-10",
+      "agreementId": "COM-001",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 9662,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-03",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-03",
+      "date": "2024-03-28",
+      "amountRM": 3626,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-04",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-04",
+      "date": "2024-04-28",
+      "amountRM": 4144,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-05",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-05",
+      "date": "2024-05-28",
+      "amountRM": 4662,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-06",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-06",
+      "date": "2024-06-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-07",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-07",
+      "date": "2024-07-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-08",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-08",
+      "date": "2024-08-28",
+      "amountRM": 3626,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-09",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 4144,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-10",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 4662,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-11",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2024-12",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 6216,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-01",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 4144,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-02",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 4662,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-03",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-04",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-05",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 6216,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-06",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 4144,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-07",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-08",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-09",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 6216,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-10",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 6734,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-11",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 4662,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2025-12",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-01",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-02",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 6216,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-03",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 7252,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-04",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-05",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 5698,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-06",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 6216,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-07",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 6734,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-08",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 7252,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-09",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 5180,
+      "isDemo": true
+    },
+    {
+      "id": "REV-002-2026-10",
+      "agreementId": "COM-002",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 5704,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-04",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-04",
+      "date": "2024-04-28",
+      "amountRM": 4673,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-05",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-05",
+      "date": "2024-05-28",
+      "amountRM": 5341,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-06",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-06",
+      "date": "2024-06-28",
+      "amountRM": 6009,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-07",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-07",
+      "date": "2024-07-28",
+      "amountRM": 6677,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-08",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-08",
+      "date": "2024-08-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-09",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 4673,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-10",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 5341,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-11",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 6009,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2024-12",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-01",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 8012,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-02",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 5341,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-03",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 6009,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-04",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 6677,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-05",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-06",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 8012,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-07",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 5341,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-08",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 6677,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-09",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-10",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 8012,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-11",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 8680,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2025-12",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 6009,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-01",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 6677,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-02",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-03",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 8012,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-04",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 9347,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-05",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 6677,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-06",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 7344,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-07",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 8012,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-08",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 8680,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-09",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 9347,
+      "isDemo": true
+    },
+    {
+      "id": "REV-003-2026-10",
+      "agreementId": "COM-003",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 6691,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-06",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-06",
+      "date": "2024-06-28",
+      "amountRM": 2255,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-07",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-07",
+      "date": "2024-07-28",
+      "amountRM": 2577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-08",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-08",
+      "date": "2024-08-28",
+      "amountRM": 2899,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-09",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 3221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-10",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-11",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 2255,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2024-12",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 2577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-01",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 2899,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-02",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-03",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 3865,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-04",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 2577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-05",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 2899,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-06",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 3221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-07",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-08",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 3865,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-09",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 2577,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-10",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 3221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-11",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2025-12",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 3865,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-01",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 4187,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-02",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 2899,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-03",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 3221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-04",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-05",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 3865,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-06",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 4510,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-07",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 3221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-08",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 3543,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-09",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 3865,
+      "isDemo": true
+    },
+    {
+      "id": "REV-004-2026-10",
+      "agreementId": "COM-004",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 4201,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-07",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-07",
+      "date": "2024-07-28",
+      "amountRM": 4568,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-08",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-08",
+      "date": "2024-08-28",
+      "amountRM": 5221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-09",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 5873,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-10",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 6526,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-11",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2024-12",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 4568,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-01",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 5221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-02",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 5873,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-03",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-04",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 7831,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-05",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 5221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-06",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 5873,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-07",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 6526,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-08",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-09",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 7831,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-10",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 5221,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-11",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 6526,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2025-12",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-01",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 7831,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-02",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 8484,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-03",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 5873,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-04",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 6526,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-05",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-06",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 7831,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-07",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 9136,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-08",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 6526,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-09",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 7178,
+      "isDemo": true
+    },
+    {
+      "id": "REV-005-2026-10",
+      "agreementId": "COM-005",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 7846,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2024-09",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2024-09",
+      "date": "2024-09-28",
+      "amountRM": 2230,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2024-10",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2024-10",
+      "date": "2024-10-28",
+      "amountRM": 2549,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2024-11",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2024-11",
+      "date": "2024-11-28",
+      "amountRM": 2868,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2024-12",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2024-12",
+      "date": "2024-12-28",
+      "amountRM": 3187,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-01",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 3505,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-02",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 2230,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-03",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 2549,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-04",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 2868,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-05",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 3505,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-06",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 3824,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-07",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 2549,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-08",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 2868,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-09",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 3187,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-10",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 3505,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-11",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 3824,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2025-12",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 2549,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-01",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 3187,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-02",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 3505,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-03",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 3824,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-04",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 4143,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-05",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 2868,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-06",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 3187,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-07",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 3505,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-08",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 3824,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-09",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 4461,
+      "isDemo": true
+    },
+    {
+      "id": "REV-006-2026-10",
+      "agreementId": "COM-006",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 3199,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-01",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-01",
+      "date": "2025-01-28",
+      "amountRM": 9897,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-02",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-02",
+      "date": "2025-02-28",
+      "amountRM": 11311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-03",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 12725,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-04",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 14139,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-05",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 15553,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-06",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 9897,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-07",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 11311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-08",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 12725,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-09",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 15553,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-10",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 16967,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-11",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 11311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2025-12",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 12725,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-01",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 14139,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-02",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 15553,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-03",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 16967,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-04",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 11311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-05",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 14139,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-06",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 15553,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-07",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 16967,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-08",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 18381,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-09",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 12725,
+      "isDemo": true
+    },
+    {
+      "id": "REV-007-2026-10",
+      "agreementId": "COM-007",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 14151,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-03",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-03",
+      "date": "2025-03-28",
+      "amountRM": 8035,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-04",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 9183,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-05",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 10331,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-06",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 11479,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-07",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 12627,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-08",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 8035,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-09",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 9183,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-10",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 10331,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-11",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 12627,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2025-12",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 13775,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-01",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 9183,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-02",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 10331,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-03",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 11479,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-04",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 12627,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-05",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 13775,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-06",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 9183,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-07",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 11479,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-08",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 12627,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-09",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 13775,
+      "isDemo": true
+    },
+    {
+      "id": "REV-008-2026-10",
+      "agreementId": "COM-008",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 14935,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-04",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-04",
+      "date": "2025-04-28",
+      "amountRM": 6311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-05",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-05",
+      "date": "2025-05-28",
+      "amountRM": 7213,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-06",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 8114,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-07",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 9016,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-08",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 9918,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-09",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 6311,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-10",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 7213,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-11",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 8114,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2025-12",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 9918,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-01",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 10819,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-02",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 7213,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-03",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 8114,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-04",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 9016,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-05",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 9918,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-06",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 10819,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-07",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 7213,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-08",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 9016,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-09",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 9918,
+      "isDemo": true
+    },
+    {
+      "id": "REV-009-2026-10",
+      "agreementId": "COM-009",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 10826,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-06",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-06",
+      "date": "2025-06-28",
+      "amountRM": 4900,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-07",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 5600,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-08",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 6300,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-09",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 7000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-10",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 7700,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-11",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 4900,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2025-12",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 5600,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-01",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 6300,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-02",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 7700,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-03",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 8400,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-04",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 5600,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-05",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 6300,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-06",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 7000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-07",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 7700,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-08",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 8400,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-09",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 5600,
+      "isDemo": true
+    },
+    {
+      "id": "REV-010-2026-10",
+      "agreementId": "COM-010",
+      "faculty": "Business Management",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 7000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-07",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-07",
+      "date": "2025-07-28",
+      "amountRM": 11573,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-08",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-08",
+      "date": "2025-08-28",
+      "amountRM": 13226,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-09",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 14880,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-10",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 16533,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-11",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 18186,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2025-12",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 11573,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-01",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 13226,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-02",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 14880,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-03",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 18186,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-04",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 19840,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-05",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 13226,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-06",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 14880,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-07",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 16533,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-08",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 18186,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-09",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 19840,
+      "isDemo": true
+    },
+    {
+      "id": "REV-011-2026-10",
+      "agreementId": "COM-011",
+      "faculty": "Applied Psychology, Social Work & Policy",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 13232,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2025-09",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-09",
+      "date": "2025-09-28",
+      "amountRM": 5169,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2025-10",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-10",
+      "date": "2025-10-28",
+      "amountRM": 5907,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2025-11",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-11",
+      "date": "2025-11-28",
+      "amountRM": 6646,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2025-12",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2025-12",
+      "date": "2025-12-28",
+      "amountRM": 7384,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-01",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 8123,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-02",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 5169,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-03",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 5907,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-04",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 6646,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-05",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 8123,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-06",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 8861,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-07",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 5907,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-08",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 6646,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-09",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 7384,
+      "isDemo": true
+    },
+    {
+      "id": "REV-012-2026-10",
+      "agreementId": "COM-012",
+      "faculty": "Multimedia Technology & Communication",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 8128,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-01",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-01",
+      "date": "2026-01-28",
+      "amountRM": 13391,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-02",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-02",
+      "date": "2026-02-28",
+      "amountRM": 15304,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-03",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 17217,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-04",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 19130,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-05",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 21043,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-06",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 13391,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-07",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 15304,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-08",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 17217,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-09",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 21043,
+      "isDemo": true
+    },
+    {
+      "id": "REV-013-2026-10",
+      "agreementId": "COM-013",
+      "faculty": "Technology Management & Logistics",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 22960,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-03",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-03",
+      "date": "2026-03-28",
+      "amountRM": 14000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-04",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 16000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-05",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 18000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-06",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 20000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-07",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 22000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-08",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 14000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-09",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 16000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-014-2026-10",
+      "agreementId": "COM-014",
+      "faculty": "Computing",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 18000,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-04",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-04",
+      "date": "2026-04-28",
+      "amountRM": 7583,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-05",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-05",
+      "date": "2026-05-28",
+      "amountRM": 8666,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-06",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-06",
+      "date": "2026-06-28",
+      "amountRM": 9750,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-07",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-07",
+      "date": "2026-07-28",
+      "amountRM": 10833,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-08",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-08",
+      "date": "2026-08-28",
+      "amountRM": 11916,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-09",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-09",
+      "date": "2026-09-28",
+      "amountRM": 7583,
+      "isDemo": true
+    },
+    {
+      "id": "REV-015-2026-10",
+      "agreementId": "COM-015",
+      "faculty": "Quantitative Sciences",
+      "reportingPeriod": "2026-10",
+      "date": "2026-10-13",
+      "amountRM": 8669,
+      "isDemo": true
+    }
+  ]
+}

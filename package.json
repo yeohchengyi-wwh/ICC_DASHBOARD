@@ -1,0 +1,11 @@
+{
+  "name": "uum-icc-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "UUM ICC front-end dashboard prototype",
+  "scripts": {
+    "start": "python3 -m http.server 3000 --bind 0.0.0.0",
+    "test": "node --test tests/core.test.mjs"
+  }
+}
